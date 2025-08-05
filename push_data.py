@@ -27,6 +27,7 @@ class NetworkDataPush():
             data=pd.read_csv(file_path)
             data.reset_index(drop=True,inplace=True)
             records=data.to_dict(orient="records")
+            logging.info("data converted csv to json")
             return records
         except Exception as e:
             raise NetworkSecurityException(e,sys)
@@ -40,6 +41,7 @@ class NetworkDataPush():
             self.database=self.mongodb_url[self.database]
             self.collection=self.database[self.collection]
             self.collection.insert_many(self.records)
+            logging.info("data inserted to mongodb")
             return len(self.records)
         except Exception as e:
             raise NetworkSecurityException(e,sys)

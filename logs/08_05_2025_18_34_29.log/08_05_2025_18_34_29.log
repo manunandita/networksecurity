@@ -1,5 +1,0 @@
-2025-08-05 18:34:29,143 | INFO | root | main.py:10 | calling the main folder
-2025-08-05 18:34:31,589 | INFO | root | data_ingestion.py:50 | train test split initiated
-2025-08-05 18:34:31,626 | INFO | root | data_ingestion.py:56 | train data has ingested to train.csv file
-2025-08-05 18:34:31,636 | INFO | root | data_ingestion.py:62 | test data has ingested to test.csv file
-2025-08-05 18:34:31,636 | INFO | root | main.py:17 | path of train and test has been printed

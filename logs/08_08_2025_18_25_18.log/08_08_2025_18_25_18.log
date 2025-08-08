@@ -1,0 +1,9 @@
+2025-08-08 18:25:18,960 | INFO | root | main.py:13 | calling the main folder
+2025-08-08 18:25:21,119 | INFO | root | data_ingestion.py:50 | train test split initiated
+2025-08-08 18:25:21,157 | INFO | root | data_ingestion.py:56 | train data has ingested to train.csv file
+2025-08-08 18:25:21,167 | INFO | root | data_ingestion.py:62 | test data has ingested to test.csv file
+2025-08-08 18:25:21,186 | INFO | root | data_validation.py:33 | required number of columns 31
+2025-08-08 18:25:21,186 | INFO | root | data_validation.py:34 | the dataframe has 31 columns
+2025-08-08 18:25:21,186 | INFO | root | data_validation.py:33 | required number of columns 31
+2025-08-08 18:25:21,186 | INFO | root | data_validation.py:34 | the dataframe has 31 columns
+2025-08-08 18:25:21,312 | INFO | root | main.py:25 | path of train and test has been printed

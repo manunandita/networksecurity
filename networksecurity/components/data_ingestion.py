@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
-from networksecurity.entity.artifact_entity import DataArtifacts
+from networksecurity.entity.artifact_entity import DataIngestionArtifacts
 
 from networksecurity.entity.config_entity import DataIngestionConfig
 from networksecurity.exception.exception import NetworkSecurityException
@@ -71,7 +71,7 @@ class DataIngestion():
             dataframe=self.extract_data_from_mongodb()
             df=self.export_data_to_feature(dataframe)
             self.initiate_train_test_split(df)
-            data_ingested_artifacts=DataArtifacts(self.data_ingestion_config.train_data_dir,self.data_ingestion_config.test_data_dir)
+            data_ingested_artifacts=DataIngestionArtifacts(self.data_ingestion_config.train_data_dir,self.data_ingestion_config.test_data_dir)
             return data_ingested_artifacts
         except Exception as e:
             raise NetworkSecurityException(e,sys)
